@@ -1,0 +1,177 @@
+/*
+########################################
+                Global
+########################################
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background: #eee;
+}
+
+header,
+main,
+footer {
+  font-size: 1rem;
+  border-top: 1px solid #666;
+  padding: 4rem 0;
+}
+
+nav,
+article,
+section {
+  width: 65%;
+  margin: 0 auto;
+}
+
+h2,
+p,
+a {
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+########################################
+                Header
+########################################
+*/
+header {
+  height: 100vh;
+  padding-top: 2rem;
+}
+
+header nav:first-of-type ul li {
+  display: inline-block;
+}
+
+header nav:first-of-type ul li {
+  padding-right: 1rem;
+}
+
+header article:first-of-type h1,
+header nav:first-of-type ul li a {
+  color: #659d89;
+}
+
+header article:first-of-type h1 + p {
+  width: 50%;
+  text-align: start;
+}
+
+header article:first-of-type h1 {
+  font-weight: lighter;
+  font-size: 3.3em;
+  padding-top: 15rem;
+}
+
+header article:first-of-type p {
+  font-size: 2.8em;
+  padding-top: 0.5rem;
+}
+
+header nav:nth-of-type(2) {
+  padding: 5rem 0;
+}
+
+header nav:nth-of-type(2) ul {
+  text-align: end;
+  line-height: 2rem;
+}
+
+header nav:nth-of-type(2) ul li a img {
+  width: 2rem;
+}
+
+header article:nth-of-type(2) p {
+  padding-top: 6rem;
+}
+
+/*
+########################################
+                Main
+########################################
+*/
+main section article img:hover {
+  box-shadow: 0 0 2rem #666;
+}
+
+main section article:first-of-type {
+  padding: 5rem 0;
+}
+
+main section:first-of-type p {
+  padding-top: 1rem;
+}
+
+main section:first-of-type article {
+  width: 90%;
+  text-align: justify;
+  text-align-last: justify;
+  margin: 0 5%;
+}
+
+main section:first-of-type article img {
+  width: 30%;
+  margin-bottom: 4rem;
+}
+
+main section:last-of-type article {
+  width: 95%;
+  padding-bottom: 10rem;
+  margin: 0 5%;
+}
+
+main section:last-of-type article:nth-of-type(even) {
+  text-align: end;
+}
+
+main section:last-of-type article img {
+  width: 65%;
+}
+
+main section:last-of-type article a {
+  line-height: 3rem;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+main section:last-of-type article p {
+  color: #666;
+}
+
+/*
+########################################
+                Footer
+########################################
+*/
+footer {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+footer p {
+  margin-top: 8rem;
+}
+
+footer h2 {
+  margin-top: 4rem;
+}

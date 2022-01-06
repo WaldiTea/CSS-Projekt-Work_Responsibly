@@ -72,6 +72,10 @@ header nav:first-of-type ul li a {
   color: #659d89;
 }
 
+header nav:first-of-type ul li a:hover {
+  text-decoration: underline;
+}
+
 header article:first-of-type h1 + p {
   width: 50%;
   text-align: start;
@@ -134,9 +138,18 @@ main section:first-of-type article img {
   margin-bottom: 4rem;
 }
 
+main section:nth-of-type(2) {
+  width: 100vw;
+  border-top: 1px solid #666;
+}
+
+main section:last-of-type h2 {
+  padding-top: 4rem;
+}
+
 main section:last-of-type article {
   width: 95%;
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
   margin: 0 5%;
 }
 
@@ -144,18 +157,30 @@ main section:last-of-type article:nth-of-type(even) {
   text-align: end;
 }
 
-main section:last-of-type article img {
+main section:last-of-type article img,
+main section:last-of-type article div {
   width: 65%;
 }
 
-main section:last-of-type article a {
+main section:last-of-type article:nth-of-type(odd) div,
+main section:last-of-type article:nth-of-type(even) div,
+footer {
+  text-align: center;
+}
+
+main section:last-of-type article:nth-of-type(even) div {
+  margin-left: auto;
+}
+
+main section:last-of-type article div a {
   line-height: 3rem;
   font-weight: bold;
   font-size: 1.5em;
 }
 
-main section:last-of-type article p {
+main section:last-of-type article div p {
   color: #666;
+  line-height: 2rem;
 }
 
 /*
@@ -164,7 +189,6 @@ main section:last-of-type article p {
 ########################################
 */
 footer {
-  text-align: center;
   padding-bottom: 1rem;
 }
 
